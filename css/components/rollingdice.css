@@ -82,48 +82,63 @@ body {
 }
 #dice .cover {
     border-radius: 0;
+    transform-origin: center;
     transform: translateZ(0px);
 }
 #dice .cover.x {
+    transform-origin: center;
     transform: rotateY(90deg);
 }
 #dice .cover.z {
+    transform-origin: center;
     transform: rotateX(90deg);
 }
 #dice .front  {
+    transform-origin: center;
     transform: translateZ(100px);
 }
 #dice .front.inner  {
+    transform-origin: center;
     transform: translateZ(98px);
 }
 #dice .back {
+    transform-origin: center;
     transform: rotateX(-180deg) translateZ(100px);
 }
 #dice .back.inner {
+    transform-origin: center;
     transform: rotateX(-180deg) translateZ(98px);
 }
 #dice .right {
+    transform-origin: center;
     transform: rotateY(90deg) translateZ(100px);
 }
 #dice .right.inner {
+    transform-origin: center;
     transform: rotateY(90deg) translateZ(98px);
 }
 #dice .left {
+    transform-origin: center;
     transform: rotateY(-90deg) translateZ(100px);
 }
 #dice .left.inner {
+    transform-origin: center;
     transform: rotateY(-90deg) translateZ(98px);
 }
 #dice .top {
+    transform-origin: center;
     transform: rotateX(90deg) translateZ(100px);
 }
 #dice .top.inner {
+    transform-origin: center;
     transform: rotateX(90deg) translateZ(98px);
 }
 #dice .bottom {
+    transform-origin: center;
     transform: rotateX(-90deg) translateZ(100px);
 }
 #dice .bottom.inner {
+    transform-origin: center;
     transform: rotateX(-90deg) translateZ(98px);
 }
 .dot {
@@ -157,6 +172,8 @@ body {
 }
 
 #background {
+  top:0px;
+  left:0px;
 	position:fixed;
 	z-index:-1;
 	width:100%;
@@ -192,7 +209,6 @@ input[type=checkbox] {
 	display:none;
 }
 label {
-	opacity:.5;
 	transition:all .3s ease;
 }
 label:hover {
@@ -200,6 +216,7 @@ label:hover {
 	box-shadow:0 0 18px rgba(255,255,255,.5);
 }
 label[for=roll] {
+  margin:0 auto;
 	z-index:1;
 	text-shadow:0 -1px 0 #006699;
 	border-color:#17C7EC;
@@ -209,7 +226,8 @@ label[for=roll] {
 	background: linear-gradient(to bottom, #0099CC 0%,#006699 100%);
 }
 label[for=secondroll] {
-	margin-top:-100px;
+  z-index: 0;
+  margin:0 auto;
 	text-shadow:0 -1px 0 #CC0033;
 	border-color:#FF8298;
 	background: -moz-linear-gradient(top, #FF6666 0%, #CC0033 100%);
@@ -218,10 +236,13 @@ label[for=secondroll] {
 	background: linear-gradient(to bottom, #FF6666 0%,#CC0033 100%);
 }
 #roll:checked ~ label[for=roll] {
-	margin-top:-100px;
+	height:0;
+  margin:0;
+  border:none;
+  padding: 0;
 }
 #roll:checked ~ label[for=secondroll] {
-	margin-top:0px;
+  height:auto;
 }
 #secondroll:checked ~ label[for=secondroll] {
 	text-shadow:0 -1px 0 #336633;

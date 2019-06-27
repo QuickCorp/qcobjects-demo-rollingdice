@@ -1,0 +1,12 @@
+{
+  "name": "qcobjects-rollingdice",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/QuickCorp/qcobjects-demo-rollingdice.git"
+  },
+  "description": ".",
+  "license": "LGPL-3.0-or-later",
+  "dependencies": {
+    "qcobjects": "latest"
+  }
+}

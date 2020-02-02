@@ -26,10 +26,12 @@
 const version = "0.0.1";
 const appName = "qcobjects-rollingdice";
 const cacheName = `qcobjects-app-${appName}-${version}`;
+const start_url = "?homescreen=1";
+caches.delete(cacheName); // force to reload cache for the first time the sw is loaded
 self.addEventListener('install', e => {
   e.waitUntil(
     caches.open(cacheName).then(cache => {
-      return cache.addAll([
+      return cache.addAll([`${start_url}`,
 	"/",
 	"README.md",
 	"css/components/rollingdice.css",

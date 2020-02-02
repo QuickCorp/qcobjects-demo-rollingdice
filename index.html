@@ -10,13 +10,19 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="https://sdk.qcobjects.dev/css/basic-layout.css"/>
-  <link rel="stylesheet" type="text/css" href="css/index.css"/>
   <!-- <link rel="stylesheet" type="text/css" href="css/theme/cyan/style.css"/>-->
   <script type="text/javascript" src="https://qcobjects.dev/QCObjects.js"></script>
   <component name="pwa" controllerClass="PWAController"></component>
 </head>
 
 <body  >
+  <style>
+  @import url('css/index.css');
+  </style>
+  <noscript>
+    <!-- anchor linking to external file -->
+    <p>This page need JavaScript because it uses QCObjects (https://qcobjects.com)</p>
+  </noscript>
 
   <component name="main" cached=true controllerClass="MainController">
   </component>

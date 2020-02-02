@@ -6,7 +6,7 @@
   "display": "standalone",
   "orientation": "portrait",
   "scope": "/qcobjects-demo-rollingdice/",
-  "start_url": "/?homescreen=1",
+  "start_url": "?homescreen=1",
   "icons": [
     {
       "src": "img/icons/icon-72x72.png",

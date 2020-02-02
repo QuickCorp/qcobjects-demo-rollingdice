@@ -5,8 +5,8 @@
   "background_color": "rgb(1,1,1)",
   "display": "standalone",
   "orientation": "portrait",
-  "scope": "/qcobjects-demo-rollingdice/",
-  "start_url": "?homescreen=1",
+  "scope": "/",
+  "start_url": "/qcobjects-demo-rollingdice/?homescreen=1",
   "icons": [
     {
       "src": "img/icons/icon-72x72.png",

@@ -84,7 +84,9 @@ self.addEventListener('install', e => {
 	"templates/components/pwa.tpl.html",
 	"templates/components/rollingdice.tpl.html",
 	"templates/components/section1.tpl.html"])
-          .then(() => self.skipWaiting());
+          .then(() => self.skipWaiting()).catch((e)=>{
+            console.log(e);
+          });
     })
   );
 });
